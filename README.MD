@@ -2,28 +2,33 @@
 ```
 
 
-                   .=-.-.   _ __              _,.---._      ,-,--.          ,-.--, 
-       .-.,.---.  /==/_ /.-`.' ,`.          ,-.' , -  `.  ,-.'-  _\.--.-.  /=/, .' 
-      /==/  `   \|==|, |/==/, -   \        /==/_,  ,  - \/==/_ ,_.'\==\ -\/=/- /   
-     |==|-, .=., |==|  |==| _ .=. |       |==|   .=.     \==\  \    \==\ `-' ,/    
-     |==|   '='  /==|- |==| , '=',|       |==|_ : ;=:  - |\==\ -\    |==|,  - |    
-     |==|- ,   .'|==| ,|==|-  '..'        |==| , '='     |_\==\ ,\  /==/   ,   \   
-     |==|_  . ,'.|==|- |==|,  |            \==\ -    ,_ //==/\/ _ |/==/, .--, - \  
-     /==/  /\ ,  )==/. /==/ - |             '.='. -   .' \==\ - , /\==\- \/=/ , /  
-     `--`-`--`--'`--`-``--`---'               `--`--''    `--`---'  `--`-'  `--`   
+                          ,-.----.               ,----..
+        ,-.----.     ,---,\    /  \             /   /   \   .--.--.   ,--,     ,--,  
+        \    /  \ ,`--.' ||   :    \           /   .     : /  /    '. |'. \   / .`|  
+        ;   :    \|   :  :|   |  .\ :         .   /   ;.  \  :  /`. / ; \ `\ /' / ;  
+        |   | .\ ::   |  '.   :  |: |        .   ;   /  ` ;  |  |--`  `. \  /  / .'  
+        .   : |: ||   :  ||   |   \ :        ;   |  ; \ ; |  :  ;_     \  \/  / ./   
+        |   |  \ :'   '  ;|   : .   /        |   :  | ; | '\  \    `.   \  \.'  /    
+        |   : .  /|   |  |;   | |`-'         .   |  ' ' ' : `----.   \   \  ;  ;     
+        ;   | |  '   :  ;|   | ;            '   ;  \; /  | __ \  \  |  / \  \  \     
+        |   | ;\  \   |  ':   ' |             \   \  ',  / /  /`--'  / ;  /\  \  \   
+        :   ' | \.'   :  |:   : :              ;   :    / '--'.     /./__;  \  ;  \  
+        :   : :-' ;   |.' |   | :               \   \ .'    `--'---' |   : / \  \  ; 
+        |   |.'   '---'   `---'.|                `---`               ;   |/   \  ' | 
+        `---'               `---`                                    `---'     `--`  
 
-    
 
-    
-     1. Create Bind Backdoor (opens a port on the victim machine and waits for you to connect)
-     2. Create Encrypted TCP Meterpreter (can embed in other script) (recommended)
 
-     ##########################################################################################
+
+        1. Create Bind Backdoor (opens a port on the victim machine and waits for you to connect) 
+        2. Create Encrypted TCP Meterpreter (can embed in other script) (recommended)
+        3. Create Obfuscated file with custom code
+        ##########################################################################################
                                                 Miners
-     3. Create a silent BTC miner
-        
+        4. Create a silent BTC miner
 
-Please select a module: 
+
+Please select a module:
 
 ```
 
@@ -33,6 +38,15 @@ OSripper is a fully undetectable Backdoor generator and Crypter which specialise
 
 
 **You can also PM me on discord for support or to ask for new features SubGlitch1#2983**
+
+## Features
+- FUD (for macOS)
+- Cloacks as an official app (Microsoft, ExpressVPN etc)
+- Dumps; Sys info, Browser History, Logins, ssh/aws/azure/gcloud creds, clipboard content, local users etc. (more on Cedric Owens swiftbelt)
+- Encrypted communications
+- Rootkit-like Behaviour
+- Every Backdoor generated is entirely unique
+- ngrok support
 
 
 ## Description
@@ -50,6 +64,7 @@ Here are example backdoors which were generated with OSRipper
 ![Screenshot](img/vt_app.png)
 macOS .apps will look like this on vt
 
+
 ## Getting Started
 
 ### Dependencies
@@ -66,13 +81,13 @@ Since Version 1.4 you will need metasploit installed and on path so that it can 
 apt install git python -y
 git clone https://github.com/SubGlitch1/OSRipper.git
 cd OSRipper
-pip3 install -r requirements.txt
+sudo python3 setup.py
 ```
 ### Windows
 ```bash
 git clone https://github.com/SubGlitch1/OSRipper.git
 cd OSRipper
-pip3 install -r requirements.txt
+sudo python3 setup.py
 ```
 or download the latest release from https://github.com/SubGlitch1/OSRipper/releases/tag/v0.2.3
 
@@ -137,6 +152,13 @@ MIT
 Inspiration, code snippets, etc.
 * [htr](https://github.com/htr-tech/PyObfuscate)
 * [swiftbelt](https://github.com/cedowens/SwiftBelt)
+
+
+## Support
+I am very sorry to even write this here but my finances are not looking good right now. 
+If you appreciate my work i would really be happy about any donation. You do NOT have to this is solely optional
+
+BTC: 1LTq6rarb13Qr9j37176p3R9eGnp5WZJ9T
 
 ## Disclaimer
 I am not responsible for what is done with this project. This tool is solely written to be studied by other security researchers to see how easy it is to develop macOS malware.
